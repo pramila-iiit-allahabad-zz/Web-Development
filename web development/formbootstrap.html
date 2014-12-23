@@ -1,0 +1,82 @@
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="bootstrap.css"/>
+		<style>
+			h3 {
+				color: white;
+				}
+			h1{
+				color:#49649F;
+				text-align: center;
+			}
+		</style>
+	</head>
+
+	<body>
+	<div class="container">
+		<div class = "row" style="margin-left:350px">
+			<div class="row">
+				<div class="col-sm-6" style="margin-top:50px;background-color:white;">
+				<h1> PULSE </h1>
+				</div>
+			</div>
+			<p>
+			
+			<div class="row" style="background-color:white;" > 
+				<div class="col-sm-6">
+					<hr>
+				</div>
+			</div>
+			
+			</p>
+			<div class="row">
+				<div class="col-sm-6" style="background-color:#49649F;text-color=white;">
+					<h3> Sign in </h3>
+				</div>
+			</div>
+			<div class="row" > 
+			<div class="col-sm-6" style="background-color:#EDEDED;">
+				<form role="form">
+					<p></p>
+		        <div class="form-group">
+		          <label for="email" style = "padding-bottom :5px;">User Id:</label>
+		          <input type="email" class="form-control" id="email" placeholder="UserID">
+		        </div>
+		        <div>
+		          <label for="pwd">Password:</label>
+		          <input type="password" class="form-control" id="pwd" placeholder="Password">
+		        </div>
+		        <p>
+
+		        </p>
+		        <button type="button" class="btn btn-default" onclick="check(this.form)">
+		        	Sign in
+		        </button>
+		        <a href="passwrd.html">Forgot Password?</a>		
+		    </div>
+		    <p></p>
+		    <div class="row" style="margin-top:200px;background-color:white;" > 
+				<div class="col-sm-6" style="margin-right:350px">
+					<hr>
+				</div>
+			</div>	
+		     </form>
+			
+	    	</div>
+	   </div>
+	</div>
+
+		<script language="javascript">
+			function check(form){
+				var userid = form.email.value;
+				var pswrd = form.pwd.value;
+
+ 				if(form.email.value == "myuserid" && form.pwd.value == "mypswrd")  {
+			    	window.open('target.html')
+			  	} else {
+				   alert("Error Password or Username")
+				}	
+			}
+		</script>
+	</body>
+</html>

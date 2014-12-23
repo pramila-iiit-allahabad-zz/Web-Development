@@ -1,0 +1,31 @@
+<html>
+	<head>
+		<title>
+			You have logged In
+		</title>
+	</head>
+	<body>
+		<h1>
+			<script type"text/javascript">
+				document.write("Password retireval form");
+			</script>
+		</h1>
+		<form name="login">
+			<p>
+				Username : <input type="text" name="userid"/>
+			</p>
+			<p>
+			<input type="button" onclick="c(this.form)" value="confirm"/>
+			</p>
+		</form>
+		<script type="text/javascript">
+			function c(form){
+				if(form.userid.value == "myuserid"){
+					alert("Your Password is mypswrd");
+				}else{
+					alert("You have not signed Up")
+				}
+			}
+		</script>
+	</body>
+</html>
